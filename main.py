@@ -103,7 +103,7 @@ def traverseFiles(files):
     for fl in files:
         print(fl)
         displayImage(fl)
-        ch=input("Enter y('') or n(*):")
+        ch=input("Enter y(partname) or n(''):")
         if not ch == "":
             Thread(target=handleName,args=(fl[0],ch,)).start()
             if active_count() > 10:
